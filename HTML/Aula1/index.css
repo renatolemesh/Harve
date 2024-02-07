@@ -1,0 +1,78 @@
+ul {
+    display: flex;
+    margin: 0 auto;
+    }
+
+li {    
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    }
+
+a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+a:hover {
+    background-color: lightblue;
+    color:black;
+}
+
+ul {
+    justify-content: end;
+    margin-right: 20px;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+#cabecalho {
+    text-align: center;
+}  
+
+#cabecalho h1 {
+    padding-bottom: 50px;
+    margin-top: -50px;
+} 
+
+.centralizar {
+    text-align: center;
+    background-color: beige;
+    margin-top: -20px;
+    padding: 10px;
+} 
+
+/* Conteudo principal */
+
+#produtos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.produto {
+   margin: 20px 40px;
+   text-align: center;
+}
+
+.produto img {
+    height: 200px;
+    width: 200px;
+}
+
+.btn {
+    background: green;
+    padding: 10px;
+    color: white;
+}
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+    background-color: beige;
+}

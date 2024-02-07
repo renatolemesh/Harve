@@ -1,0 +1,132 @@
+/* Cabecalho */
+.cabecalho {
+    width: 100%;
+    border: 2px solid black;
+    
+}
+
+.navbar {
+    display: flex;
+    border-bottom: 2px solid black;
+    text-align: center;
+    justify-content: center;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.lateral-cabecalho {
+    display: flex;
+}
+
+/* Conteudo principal */
+
+.container-principal {
+
+    width: 100%;
+    height: 75vh;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.menu-flex {
+    display: flex;
+    text-align: center;
+
+    align-items: center;
+}
+
+.item-menu {
+
+    padding: 15px;
+    text-decoration: none;
+    border: 2px solid black;
+}
+
+li.item-menu {
+    list-style-type: none
+}
+
+/* Caixas principais */
+
+.caixas-primarias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.caixa-porcentagem {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    flex-direction: column;
+}
+
+.titulo-caixa-porcentagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.conteudo-caixa-porcentagem {
+    display: flex;
+    align-items: baseline;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.interno-caixa-porcentagem {
+  border: 1px solid black;
+}
+
+.caixa-cor {
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+}
+
+.flex1 {
+    flex-grow: 3;
+}
+
+.flex2 {
+    flex-grow: 2;
+}
+
+.flex3 {
+    flex-grow: 1;
+}
+
+/*Caixas secundarias*/
+
+.caixas-news {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.news {
+    width: 300px;
+    height: 150px;
+    background-color: blue;
+}
+
