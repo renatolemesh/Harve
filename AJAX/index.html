@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        function gerarEndereco() {
+            let cep = document.getElementById('cep').value
+            let url = `https://viacep.com.br/ws/${cep}/json/`
+            let xmlHttp = new XMLHttpRequest()
+			xmlHttp.open('GET', url)
+            xmlHttp.onreadystatechange = () => {
+				let dadosJSONText = xmlHttp.responseText
+				let dadosJSONObj = JSON.parse(dadosJSONText)
+                document.getElementById('rua').value = dadosJSONObj.logradouro
+				document.getElementById('cidade').value = dadosJSONObj.localidade
+				document.getElementById('UF').value = dadosJSONObj.uf
+                
+            }
+            
+
+            xmlHttp.send()
+        }
+    </script>
+</head>
+<body>
+    
+    <input type="text" id="cep" onblur="gerarEndereco()" placeholder="CEP">
+    <input type="text" id="rua" placeholder="Rua">
+    <input type="text" id="cidade" placeholder="Cidade">
+    <input type="text" id="UF" placeholder="UF">
+</body>
+</html>
